@@ -15,8 +15,7 @@ import xbmcgui
 import xbmcplugin
 from BeautifulSoup import BeautifulSoup
 
-from hak5_const import ADDON, DATE, VERSION, IMAGES_PATH, HEADERS, HAK5SEASONSURLHTTPS
-
+from hak5_const import ADDON, DATE, VERSION, IMAGES_PATH, HEADERS, HAK5SEASONSURLHTTPS, LANGUAGE
 
 #
 # Main class
@@ -108,6 +107,12 @@ class Main:
             thumbnail_url = ''
             title = season.text
 
+            add_sort_methods()
+
+            context_menu_items = []
+            # Add refresh option to context menu
+            context_menu_items.append((LANGUAGE(30104), 'Container.Refresh'))
+
             # Add to list...
             list_item = xbmcgui.ListItem(label=title, thumbnailImage=thumbnail_url)
             list_item.setArt({'thumb': thumbnail_url, 'icon': thumbnail_url,
@@ -117,8 +122,8 @@ class Main:
                           "title": title}
             url = self.plugin_url + '?' + urllib.urlencode(parameters)
             is_folder = True
-            # Add refresh option to context menu
-            list_item.addContextMenuItems([('Refresh', 'Container.Refresh')])
+            # Adding context menu items to context menu
+            list_item.addContextMenuItems(context_menu_items, replaceItems=False)
             # Add our item to the listing as a 3-element tuple.
             listing.append((url, list_item, is_folder))
 
@@ -130,3 +135,8 @@ class Main:
         xbmcplugin.addSortMethod(handle=self.plugin_handle, sortMethod=xbmcplugin.SORT_METHOD_NONE)
         # Finish creating a virtual folder.
         xbmcplugin.endOfDirectory(self.plugin_handle)
+
+def add_sort_methods():
+	sort_methods = [xbmcplugin.SORT_METHOD_UNSORTED,xbmcplugin.SORT_METHOD_LABEL,xbmcplugin.SORT_METHOD_DATE,xbmcplugin.SORT_METHOD_DURATION,xbmcplugin.SORT_METHOD_EPISODE]
+	for method in sort_methods:
+		xbmcplugin.addSortMethod(int(sys.argv[1]), sortMethod=method)

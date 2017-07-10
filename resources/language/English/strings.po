@@ -27,6 +27,14 @@ msgctxt "Addon Disclaimer"
 msgid "For bugs, requests or general questions visit the hak5.com thread on the Kodi forum"
 msgstr ""
 
+msgctxt "#30104"
+msgid "Refresh"
+msgstr ""
+
+msgctxt "#30105"
+msgid "Episode Info"
+msgstr ""
+
 msgctxt "#30106"
 msgid "Error getting page: %s"
 msgstr ""
