@@ -90,7 +90,7 @@ class Main:
             search_for_string = '"/>'
             end_pos_meta_prop = html_source.find(search_for_string, start_pos_meta_prop)
             if end_pos_meta_prop > 0:
-                # the last 3 characters are removedremoving the last 3 characters
+                # the last 3 characters are removed
                 meta_prop = html_source[start_pos_meta_prop: end_pos_meta_prop]
 
                 xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
