@@ -1,3 +1,6 @@
+v1.0.3-SNAPSHOT (2017-11-27)
+Fixed settings.xml
+
 v1.0.2 (2017-11-12)
 Fixes due to website changes
 
