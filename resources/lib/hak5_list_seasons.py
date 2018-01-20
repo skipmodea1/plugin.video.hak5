@@ -13,12 +13,11 @@ import os
 import requests
 import sys
 import urllib.request, urllib.parse, urllib.error
-import urllib.parse
 import re
 import xbmcgui
 import xbmcplugin
 
-from .hak5_const import ADDON, DATE, VERSION, IMAGES_PATH, HEADERS, LANGUAGE, convertToUnicodeString, log, getSoup
+from .hak5_const import IMAGES_PATH, HEADERS, LANGUAGE, convertToUnicodeString, log, getSoup
 
 #
 # Main class
