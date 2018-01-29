@@ -1,3 +1,6 @@
+v1.0.4-SNAPSHOT (2018-01-29)
+- Fixed website url in addon.xml (thanks Dangelus!)
+
 v1.0.3 (2018-01-20)
 - Fixed settings.xml
 - addon now works in kode python 2 and should also work in python 3 (!!) once all dependencies work in python 3.
