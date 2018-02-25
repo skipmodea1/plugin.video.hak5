@@ -1,5 +1,7 @@
 v1.0.4-SNAPSHOT (2018-01-29)
 - Fixed website url in addon.xml (thanks Dangelus!)
+- removing non-ascii characters in title in parameters to prevent UnicodeDecodeError: 'ascii' codec can't decode ...
+The error occured when doing urllib.parse.parse_qs of the parameters
 
 v1.0.3 (2018-01-20)
 - Fixed settings.xml
