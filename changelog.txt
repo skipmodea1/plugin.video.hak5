@@ -1,3 +1,6 @@
+v1.0.5 (2018-04-30)
+- Renamed haktik to haktip
+
 v1.0.4 (2018-04-15)
 - Fixed website url in addon.xml (thanks Dangelus!)
 - removing non-ascii characters in title in parameters to prevent UnicodeDecodeError: 'ascii' codec can't decode ...

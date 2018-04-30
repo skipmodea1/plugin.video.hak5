@@ -15,13 +15,13 @@ SETTINGS = xbmcaddon.Addon()
 LANGUAGE = SETTINGS.getLocalizedString
 IMAGES_PATH = os.path.join(xbmcaddon.Addon().getAddonInfo('path'), 'resources', 'images')
 HAK5RECENTLYADDEDURL = 'https://www.hak5.org/shows/hak5'
-HAKTIKRECENTLYADDEDURL = 'https://www.hak5.org/shows/haktip'
+HAKTIPRECENTLYADDEDURL = 'https://www.hak5.org/shows/haktip'
 THREATWIRERECENTLYADDEDURL = 'https://www.hak5.org/shows/threatwire'
 TEKTHINGRECENTLYADDEDURL = 'https://www.hak5.org/shows/tekthing'
 METASPLOITRECENTLYADDEDURL = 'https://www.hak5.org/shows/metasploit-minute'
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-DATE = "2018-04-15"
-VERSION = "1.0.4"
+DATE = "2018-04-30"
+VERSION = "1.0.5-SNAPSHOT"
 
 if sys.version_info[0] > 2:
     unicode = str

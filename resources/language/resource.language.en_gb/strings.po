@@ -20,7 +20,7 @@ msgid "Watch videos from hak5.com"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "Watch videos from hak5.com. The videos are from the shows Hak5, Haktik, Threatwire, Tekthing, Pineapple University and Metasploit"
+msgid "Watch videos from hak5.com. The videos are from the shows Hak5, Haktip, Threatwire, Tekthing, Pineapple University and Metasploit"
 msgstr ""
 
 msgctxt "Addon Disclaimer"
@@ -60,7 +60,7 @@ msgid "Hak5 Seasons"
 msgstr ""
 
 msgctxt "#30303"
-msgid "Haktik Recently Added Episodes"
+msgid "Haktip Recently Added Episodes"
 msgstr ""
 
 msgctxt "#30304"

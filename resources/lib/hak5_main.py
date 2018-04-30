@@ -14,7 +14,7 @@ import xbmcgui
 import xbmcplugin
 import os
 
-from .hak5_const import LANGUAGE, IMAGES_PATH, HAK5RECENTLYADDEDURL, HAKTIKRECENTLYADDEDURL, \
+from .hak5_const import LANGUAGE, IMAGES_PATH, HAK5RECENTLYADDEDURL, HAKTIPRECENTLYADDEDURL, \
     THREATWIRERECENTLYADDEDURL, TEKTHINGRECENTLYADDEDURL, METASPLOITRECENTLYADDEDURL
 #
 # Main class
@@ -40,10 +40,10 @@ class Main(object):
         xbmcplugin.addDirectoryItem(handle=self.plugin_handle, url=url, listitem=list_item, isFolder=is_folder)
 
         #
-        # Haktik Recently Added Episodes
+        # Haktip Recently Added Episodes
         #
         parameters = {"action": "list-episodes", "plugin_category": LANGUAGE(30303),
-                      "url": HAKTIKRECENTLYADDEDURL,
+                      "url": HAKTIPRECENTLYADDEDURL,
                       "next_page_possible": "False"}
         url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
         list_item = xbmcgui.ListItem(LANGUAGE(30303))
