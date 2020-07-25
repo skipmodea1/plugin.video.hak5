@@ -1,3 +1,6 @@
+v1.0.6-SNAPSHOT (2020-07-25)
+- Testing git workflow
+
 v1.0.5 (2018-04-30)
 - Renamed haktik to haktip
 
